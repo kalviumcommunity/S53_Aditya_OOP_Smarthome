@@ -1,9 +1,13 @@
 package javafiles;
-import javafiles.classes_and_objects.User;
 
-class array_of_objects {
-
+public class Main {
     public static void main(String[] args) {
+        // Creating User objects
+        User Aditya = new User("Aditya Raj", 20, true);
+        User Akshat = new User("Akshat", 18, false);
+
+        // Comparing age between two users
+        Aditya.compareAge(Akshat);
 
         User users[] = new User[3];
 
@@ -14,12 +18,12 @@ class array_of_objects {
         // Usage of array of objects
         System.out.println("Displaying users data: ");
         for(User user : users){
-            user.display_info();
+            user.displayInfo();
         }
 
         // Modifying data via array
         users[1].increaseAge();
 
-        users[1].display_info();
+        users[1].displayInfo();
     }
 }
