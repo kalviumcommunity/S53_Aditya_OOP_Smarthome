@@ -29,6 +29,8 @@ int main() {
     }
 
     delete[] devices;
+    delete user1;
+    delete user2;
 
     return 0;
 }
