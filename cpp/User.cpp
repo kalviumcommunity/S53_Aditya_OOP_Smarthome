@@ -5,6 +5,7 @@ User::User(string name, int age, string role) {
     this->name = name;
     this->age = age;
     this->role = role;
+    totalUsers++;
 }
 
 string User::getUsername() {
@@ -41,3 +42,9 @@ void User::increaseAge() {
 int User::compareAge(User user) {
     return this->age > user.age;
 }
+
+int User::getTotalUsers(){
+    return totalUsers;
+}
+
+int User::totalUsers = 0;

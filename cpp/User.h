@@ -10,6 +10,9 @@ private:
     string password;
 
 public:
+
+    static int totalUsers;
+
     string name;
     int age;
     string role;
@@ -28,6 +31,8 @@ public:
     void changePassword(string newPassword);
     void increaseAge();
     int compareAge(User user);
+
+    static int getTotalUsers();
 };
 
 #endif

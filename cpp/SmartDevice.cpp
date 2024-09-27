@@ -8,6 +8,7 @@ SmartDevice::SmartDevice(string name, string manufacturer, string model) {
     this->isOn = false;
     this->isConnected = false;
     this->batteryLevel = 100;
+    devicesCount++;
 }
 
 void SmartDevice::turnOn() {
@@ -57,3 +58,9 @@ void SmartDevice::compareBatteryLevel(SmartDevice device) {
         cout << "Both have the same battery level" << endl;
     }
 }
+
+int SmartDevice::getTotalDevices(){
+    return devicesCount;
+}
+
+int SmartDevice::devicesCount = 0;

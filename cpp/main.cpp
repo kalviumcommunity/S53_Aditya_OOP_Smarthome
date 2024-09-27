@@ -14,6 +14,8 @@ int main() {
     user2->displayInfo();
     cout << endl;
 
+    cout << "Total Users: " << User::getTotalUsers() << endl;
+
     SmartDevice* devices = new SmartDevice[3]{
         SmartDevice("Living Room Light", "Philips", "Hue"),
         SmartDevice("Speaker", "Boat", "One"),
@@ -27,6 +29,8 @@ int main() {
         devices[i].displayInfo();
         cout << endl;
     }
+
+    cout << "Total Devices: " << SmartDevice::getTotalDevices() << endl;
 
     delete[] devices;
     delete user1;
