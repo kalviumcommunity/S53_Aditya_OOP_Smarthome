@@ -1,6 +1,9 @@
 package javafiles;
 
 public class User {
+
+    private static int totalUsers = 0;
+
     private String username;
     private String password;
     public String name;
@@ -12,6 +15,7 @@ public class User {
         this.name = name;
         this.age = age;
         this.is_admin = is_admin;
+        totalUsers++;
     }
 
     // Getters and setters for private attributes
@@ -53,5 +57,9 @@ public class User {
         } else {
             System.out.println(this.name + " and " + user.name + " are of the same age.");
         }
+    }
+
+    public static int getTotalUsers() {
+        return totalUsers;
     }
 }

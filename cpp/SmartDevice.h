@@ -10,6 +10,9 @@ private:
     string model;
 
 public:
+
+    static int devicesCount;
+
     string name;
     bool isOn;
     bool isConnected;
@@ -25,6 +28,8 @@ public:
     void disconnectFromNetwork();
     void displayInfo();
     void compareBatteryLevel(SmartDevice device);
+
+    static int getTotalDevices();
 };
 
 #endif
