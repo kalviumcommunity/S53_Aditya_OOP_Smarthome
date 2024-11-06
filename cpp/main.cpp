@@ -6,7 +6,8 @@ using namespace std;
 
 int main() {
 
-    User* user1 = new User("Aditya", 20, "Admin");
+    //  User Aditya("Aditya Raj Pourush", 20, "Admin");  static memory allocation
+    User* user1 = new User("Aditya", 20, "Admin");  // dynamic memory allocation
     User* user2 = new User("Akshat", 18, "User");
 
     user1->displayInfo();
