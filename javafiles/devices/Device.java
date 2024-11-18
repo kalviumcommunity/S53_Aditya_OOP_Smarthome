@@ -8,6 +8,12 @@ public abstract class Device {
     // static variable to keep track of total number of devices
     public static int deviceCount = 0;
 
+    public Device(){
+        name = "Device";
+        isOn = false;
+        deviceCount++;
+    }
+
     public Device(String name){
         this.name = name;
         this.isOn = false;
