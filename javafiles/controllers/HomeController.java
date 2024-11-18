@@ -78,4 +78,13 @@ public class HomeController {
             System.out.println(device.getName() + " is " + (device.isOn() ? "ON" : "OFF"));
         }
     }
+
+    // List devices by count : Funtion overloading
+    public void listDevices(int count) {
+        System.out.println("Listing " + count + " devices:");
+        for (int i = 0; i < count; i++) {
+            Device device = devices.get(i);
+            System.out.println(device.getName() + " is " + (device.isOn() ? "ON" : "OFF"));
+        }
+    }
 }
